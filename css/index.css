@@ -1,0 +1,547 @@
+body {
+    position: relative;
+}
+
+.myContainer {
+    margin-left: 10%;
+    width: 80%;
+    height: 90%;
+    overflow: auto;
+}
+
+.rightBtn {
+    position: fixed;
+    height: 100px;
+    width: 50px;
+    top: 40%;
+    transform: translate(-50px);
+    right: 0;
+    z-index: 1000;
+}
+
+.rightBtn button {
+    margin-bottom: 100%;
+}
+
+.myLine {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+/*每个页面样式开始*/
+.page {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 70px;
+}
+
+/*第一页*/
+#page-one {
+    background-color: #0DA5D6;
+}
+
+#page-one ul {
+    width: 50%;
+    height: 40px;
+    margin-left: 25%;
+    list-style: none;
+    text-align: center;
+}
+
+#page-one ul li {
+    width: 25%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s;
+
+}
+
+#page-one ul li span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#page-one ul li span:nth-child(1) {
+    background-color: #adadad;
+    transform: rotateX(90deg) translateZ(20px);
+}
+
+#page-one ul li span:nth-child(2) {
+    background-color: #e0e0e0;
+    transform: translateZ(20px);
+}
+
+#page-one ul li:hover {
+    transform: rotateX(-90deg);
+}
+/*视频播放器CSS3代码*/
+.myContainer video {
+    width: 100%;
+    height: 90%;
+}
+
+/*第二页*/
+#page-two {
+    background-color: #2AB561;
+}
+
+#page-two #collapseThree .myView {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    overflow: hidden;
+    border: 1px solid #080808;
+    box-sizing: border-box;
+}
+/*CSS3实现的轮播图特效*/
+#page-two #collapseThree ul {
+    width: 400%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    left: 0;
+    animation: move 30s linear infinite;
+}
+
+#page-two #collapseThree ul:hover {
+    /*调整动画状态*/
+    animation-play-state: paused;
+
+}
+
+#page-two #collapseThree li {
+    float: left;
+    width: 5%;
+}
+
+#page-two #collapseThree li img {
+    width: 100%;
+    height: 100px;
+}
+
+/*动画序列*/
+@keyframes move {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -300%;
+    }
+}
+
+/*第三页*/
+#page-three {
+    background-color: #16BA9D;
+}
+
+#page-three .bs-example {
+    width: 90%;
+    height: 100%;
+}
+
+#page-three .bs-example #carousel-example-captions {
+    width: 100%;
+    height: 100%;
+}
+
+#page-three .bs-example #carousel-example-captions .carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+#page-three .bs-example #carousel-example-captions .carousel-inner .item {
+    width: 100%;
+    height: 100%;
+}
+
+#page-three img {
+    width: 100%;
+    height: 100%;
+}
+
+/*第四页*/
+#page-four {
+    background-color: #59B7D0;
+    position: relative;
+    padding-top: 45px;
+}
+
+#page-four .myPic {
+    float: right;
+    width: 150px;
+    height: 140px;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+
+#page-four .myPic img {
+    width: 100%;
+    height: 100%;
+}
+
+/*第五页*/
+#page-five {
+    background-color: #7092BE;
+    padding-top: 45px;
+}
+
+#page-five .myThumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#page-five .myThumbnail img {
+    width: 100%;
+    transition: all 1s;
+    opacity: 0.5;
+}
+
+#page-five .myThumbnail img:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/*第六页*/
+#page-six {
+    background-color: #C8BFE7;
+    padding-top: 45px;
+}
+
+#page-six h2 {
+    background: url(../images/indexImg/line1.png) no-repeat left bottom;
+}
+
+#page-six .chat {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 80%;
+}
+
+#page-six .chatMe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    border: 1px solid #CCC;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+#page-six .chatMe .messages {
+    height: 70%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #CCC;
+    overflow: scroll;
+}
+
+#page-six .chatMe h5{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#page-six .chatMe .messages p {
+    font-size: 18px;
+    margin: 0;
+}
+
+#page-six .chatMe .self {
+    text-align: left;
+}
+
+#page-six .chatMe .other {
+    text-align: right;
+}
+
+#page-six .chatMe .form {
+    height: 30%;
+}
+
+#page-six .chatMe .form .input {
+    height: 75%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #CCC;
+}
+
+#page-six .chatMe .form .btn {
+    height: 25%;
+    box-sizing: border-box;
+    padding: 2px 5px 2px 0;
+    float: right;
+}
+
+#page-six .chatMe .form textarea {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+    resize: none;
+    outline: none;
+    font-size: 20px;
+}
+
+#page-six .chatMe .form input {
+    display: block;
+    height: 100%;
+}
+
+#page-six .clock {
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    border: 10px solid #000;
+    border-radius: 110px;
+    position: relative;
+    background-color: #fff;
+}
+
+#page-six .clock div {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#page-six .clock .line {
+    position: absolute;
+
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #ccc;
+    margin-left: -1px;
+}
+
+#page-six .line1 {
+    transform: rotateZ(30deg);
+}
+
+#page-six .line2 {
+    transform: rotateZ(60deg);
+}
+
+#page-six .line3 {
+    transform: rotateZ(90deg);
+}
+
+#page-six .line4 {
+    transform: rotateZ(120deg);
+}
+
+#page-six .line5 {
+    transform: rotateZ(150deg);
+}
+
+#page-six .line6 {
+    transform: rotateZ(180deg);
+}
+
+#page-six .clock .line3, #page-six .clock .line6 {
+    width: 4px;
+    margin-left: -2px;
+    background: #AAA
+}
+
+#page-six .clock .cover {
+    width: 160px;
+    height: 160px;
+    background: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -80px 0 0 -80px;
+}
+
+#page-six #h {
+    width: 8px;
+    height: 50px;
+    background: #000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -4px;
+    margin-top: -50px;
+    transform-origin: center bottom;
+
+}
+
+#page-six #m {
+    width: 6px;
+    height: 60px;
+    background: #000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -3px;
+    margin-top: -60px;
+    transform-origin: center bottom;
+
+}
+
+#page-six #s {
+    width: 4px;
+    height: 70px;
+    background: red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -2px;
+    margin-top: -70px;
+    transform-origin: center bottom;
+
+}
+
+#page-six .clock .dotted {
+    width: 20px;
+    height: 20px;
+    background: #000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+#page-six .info {
+    float: right;
+    width: 50%;
+}
+
+#page-six .info h3 {
+    background: url(../images/indexImg/line2.png) no-repeat left bottom;
+}
+
+/*动画*/
+/*bounceInDown*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+}
+
+.bounceOut {
+    -webkit-animation-name: bounceOut;
+    animation-name: bounceOut;
+}
+
+.bounceOutLeft {
+    -webkit-animation-name: bounceOutLeft;
+    animation-name: bounceOutLeft;
+}
+
+.fadeInDownBig {
+    -webkit-animation-name: fadeInDownBig;
+    animation-name: fadeInDownBig;
+}
+
+@keyframes bounceInDown {
+    from, 60%, 75%, 90%, to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes bounceOut {
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9);
+        transform: scale3d(.9, .9, .9);
+    }
+
+    50%, 55% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes bounceOutLeft {
+    20% {
+        opacity: 1;
+        -webkit-transform: translate3d(20px, 0, 0);
+        transform: translate3d(20px, 0, 0);
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(-2000px, 0, 0);
+        transform: translate3d(-2000px, 0, 0);
+    }
+}
+
+@keyframes fadeInDownBig {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -2000px, 0);
+        transform: translate3d(0, -2000px, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}

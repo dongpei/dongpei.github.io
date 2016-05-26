@@ -1,0 +1,607 @@
+/*banner部分开始*/
+.banner {
+    position: relative;
+    height: 460px;
+    width: 1350px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.banner .changepic {
+    position: absolute;
+    height: 460px;
+    width: 30000px;
+    left: 0;
+}
+
+.changepic li {
+    float: left;
+}
+
+.changepic img {
+    width: 1350px;
+    height: 460px;
+}
+
+.banner .circle {
+    position: absolute;
+    right: 40px;
+    bottom: 135px;
+}
+
+.circle li {
+    margin: 10px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.circle span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.banner .msgdiv {
+    position: absolute;
+    width: 1115px;
+    height: 97px;
+    margin: 0 auto;
+    left: 74px;
+    bottom: 38px;
+    background: url("../images/clhImg/quote.png") no-repeat 33px 30px;
+    background-color: #fff;
+    padding-left: 85px;
+    overflow: hidden;
+}
+
+.banner .msg {
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+}
+
+.msg p {
+    position: relative;
+    top: -20px;
+    width: 885px;
+}
+
+.msg #ZTE {
+    position: relative;
+    top: -5px;
+}
+
+.msg .msgpic {
+    border-left: 1px dotted #ccc;
+    padding-left: 55px;
+    margin-top: 10px;
+}
+
+/*banner部分结束*/
+
+/*guild部分开始*/
+.guild {
+    width: 1350px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.guild h2 {
+    color: #525252;
+    font-size: 24px;
+    padding-top: 65px;
+    text-align: center;
+}
+
+.guild p {
+    color: #bbb;
+    font-size: 16px;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.guild_link {
+    width: 1200px;
+    height: 72px;
+    margin: auto;
+    line-height: 72px;
+    border-top: 1px dotted #d1d1d1;
+    text-align: center;
+    font-size: 16px;
+}
+
+.guild_link span {
+    margin: 0 23px;
+}
+
+.guild_link a {
+    margin: 0 23px;
+    color: #a4a4a4;
+}
+
+.guild_link a:hover {
+    color: #333;
+}
+
+.guild_pics {
+    position: relative;
+    width: 400%;
+    height: 540px;
+    left: 0;
+}
+
+.guild_pics ul {
+    float: left;
+    width: 1350px;
+    height: 540px;
+}
+
+.guild_pics li {
+    position: relative;
+    width: 25%;
+    height: 271px;
+    float: left;
+    text-align: center;
+}
+
+.guild_pics li a {
+    display: block;
+    width: 340px;
+    height: 270px;
+    overflow: hidden;
+}
+
+.guild_pics img {
+    width: 338px;
+    height: 215px;
+}
+
+.guild_pics p {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: -65px;
+    left: 1px;
+    line-height: 50px;
+    color: #a9a9a9;
+    background: rgba(0, 0, 0, 0.5);
+    background: #666;
+    text-align: left;
+    text-indent: 20px;
+}
+
+.guild_pics h5 {
+    position: absolute;
+    width: 340px;
+    line-height: 60px;
+    font-size: 18px;
+    color: #333;
+    background-color: #fff;
+    bottom: 0;
+}
+
+.guild .works_ctrl {
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    height: 85px;
+    background: #f1f1f1;
+    text-align: center;
+}
+
+.works_ctrl button {
+    width: 52px;
+    height: 50px;
+    display: inline-block;
+    margin: 17px 5px;
+    border: none;
+}
+
+.works_ctrl #works_prev {
+    background: #fff url(../images/clhImg/click_1.png) no-repeat 0 0;
+}
+
+.works_ctrl #works_prev:hover {
+    background: #333 url(../images/clhImg/click_1.png) no-repeat -52px 0;
+}
+
+.works_ctrl #works_next {
+    background: #fff url(../images/clhImg/click_1.png) no-repeat -52px -50px;
+}
+
+.works_ctrl #works_next:hover {
+    background: #333 url(../images/clhImg/click_1.png) no-repeat 0 -50px;
+}
+
+#works_prev, #works_next, #works_more {
+    border-radius: 2px;
+    vertical-align: middle;
+}
+
+#works_more {
+    display: inline-block;
+    width: 92px;
+    height: 50px;
+    background: #fff url(../images/clhImg/click_2.png) no-repeat center -50px;
+    vertical-align: middle;
+}
+
+#works_more:hover {
+    background: #333 url(../images/clhImg/click_2.png) no-repeat center 0;
+}
+
+/*guild部分结束*/
+
+/*news部分开始*/
+.news {
+    width: 1200px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.news .item {
+    float: left;
+    width: 370px;
+    height: 450px;
+    margin-right: 20px;
+    background: #f8f8f8;
+    position: relative;
+}
+
+.news .item h3, .news .signing h3 {
+    margin: 32px 0 30px;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.news .item h3 a, .news .item h3 a:hover, .news .signing h3 a, .news .signing h3 a:hover {
+    color: #999;
+}
+
+.news .item h5 {
+    font-size: 18px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.news .item a {
+    color: #000;
+}
+
+.news .item a:hover {
+    color: #8fc35d;
+}
+
+.news .item span {
+    display: block;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 10px 0 25px;
+    color: #999;
+}
+
+.news .item summary {
+    height: 62px;
+    color: #999;
+    overflow: hidden;
+}
+
+.news .item h3, .news .item h5, .news .item span, .news .item summary {
+    padding: 0 18px;
+}
+
+.news .pic {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.news .pic img {
+    width: 100%;
+}
+
+.news .signing {
+    float: right;
+    width: 360px;
+    height: 450px;
+    padding: 0 30px;
+    background: #f8f8f8;
+    overflow: hidden;
+}
+
+.news .signing ul {
+    width: 100%;
+}
+
+.news .signing ul li {
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    position: relative;
+}
+
+.news .signing ul li a {
+    position: absolute;
+    left: 0;
+    display: block;
+    height: 45px;
+    width: 240px;
+    color: #666;
+    overflow: hidden;
+}
+
+.news .signing ul li a:hover {
+    color: #8fc35d;
+}
+
+.news .signing ul li span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #b4b4b4;
+    font-size: 14px;
+}
+
+/*news部分结束*/
+
+/*service部分开始*/
+.service {
+    overflow: hidden;
+}
+
+.service_top {
+    margin: 104px auto;
+    padding: 74px 0;
+    border-top: 1px dotted #c8c8c8;
+    position: relative;
+}
+
+.fiveyears {
+    position: absolute;
+    top: -56px;
+    left: 50%;
+    width: 320px;
+    height: 100px;
+    margin-left: -160px;
+    background: #fff;
+    text-align: center;
+    display: none;
+}
+
+.fiveyears h2, .fiveyears p {
+    margin: 0;
+    padding: 0;
+}
+
+.fiveyears h2 {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 6px;
+    color: #7c7c7c;
+}
+
+.fiveyears p {
+    font-size: 16px;
+    color: #525252;
+}
+
+.fiveyears span {
+    display: block;
+    margin-top: 20px;
+    color: #bbb;
+}
+
+.service_link ul {
+    width: 1195px;
+    margin: 74px auto;
+    overflow: hidden;
+    border-top: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+}
+
+.service_link ul li {
+    float: left;
+    width: 238px;
+    height: 178px;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+    position: relative;
+}
+
+.service_link ul li a {
+    position: relative;
+    display: block;
+    width: 238px;
+    height: 178px;
+    overflow: hidden;
+}
+
+.service_link ul li span {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    display: block;
+    width: 218px;
+    height: 158px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.service_link ul li i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 218px;
+    height: 178px;
+    background-image: url(../images/clhImg/clients.jpg);
+}
+
+.service_link ul li i {
+    opacity: 0.3;
+}
+
+.service_link ul li a:hover i {
+    opacity: 1;
+}
+
+.service_link ul li .clients01 {
+    background-position: -238px 0;
+}
+
+.service_link ul li .clients02 {
+    background-position: -476px 0;
+}
+
+.service_link ul li .clients03 {
+    background-position: -714px 0;
+}
+
+.service_link ul li .clients04 {
+    background-position: -952px 0;
+}
+
+.service_link ul li .clients05 {
+    background-position: -1190px 0;
+}
+
+.service_link ul li .clients06 {
+    background-position: -1428px 0;
+}
+
+.service_link ul li .clients07 {
+    background-position: -1666px 0;
+}
+
+.service_link ul li .clients08 {
+    background-position: -1904px 0;
+}
+
+.service_link ul li .clients09 {
+    background-position: -2142px 0;
+}
+
+.service_link ul li .clients10 {
+    background-position: -2380px 0;
+}
+
+.service_link ul li .clients11 {
+    background-position: -2618px 0;
+}
+
+.service_link ul li .clients12 {
+    background-position: -2856px 0;
+}
+
+.service_link ul li .clients13 {
+    background-position: -3094px 0;
+}
+
+.service_link ul li .clients14 {
+    background-position: -3332px 0;
+}
+
+.service_link ul li .clients15 {
+    background-position: -3570px 0;
+}
+
+.service_link ul li .clients16 {
+    background-position: -3808px 0;
+}
+
+.service_link ul li .clients17 {
+    background-position: -4046px 0;
+}
+
+.service_link ul li .clients18 {
+    background-position: -4284px 0;
+}
+
+.service_link ul li .clients19 {
+    background-position: -4522px 0;
+}
+
+.service .servicebottom {
+    position: relative;
+    top: -150px;
+    margin-bottom: -130px;
+}
+
+.profession {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 460px;
+    height: 60px;
+    margin-left: -230px;
+    background: #fff;
+    text-align: center;
+}
+
+.profession-nr {
+    font-size: 12px;
+    color: #999;
+    margin-top: -40px;
+    text-align: center;
+}
+
+.profession-nr p {
+    margin-top: 16px;
+}
+
+.profession_list {
+    width: 1200px;
+    margin: 70px auto 0;
+    overflow: hidden;
+}
+
+.profession_list dl {
+    float: left;
+    padding-top: 88px;
+    width: 300px;
+}
+
+.profession_list dt {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.profession_list dd {
+    color: #999;
+    font-size: 14px;
+    line-height: 25px;
+    display: none;
+}
+
+dl.web {
+    background: url(../images/clhImg/m_computer.png) no-repeat 24px 4px;
+    opacity: 0;
+}
+
+dl.app {
+    background: url(../images/clhImg/m_phone.png) no-repeat 60px 0;
+    opacity: 0;
+}
+
+dl.seo {
+    background: url(../images/clhImg/m_wifi.png) no-repeat 28px 0;
+    opacity: 0;
+}
+
+dl.vi {
+    background: url(../images/clhImg/m_more.png) no-repeat 65px 0;
+    opacity: 0;
+}
+
+/*service部分结束*/
